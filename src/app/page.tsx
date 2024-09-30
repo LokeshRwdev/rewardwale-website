@@ -1,4 +1,3 @@
-import ThemeToggle from "@/components/common/ThemeToggle";
 import { ThemeColorToggle } from "@/components/theme-color-toggle";
 import { ThemeModeToggle } from "@/components/theme-mode-toggle";
 import Image from "next/image";
@@ -16,7 +15,6 @@ export default function Home() {
         >
           <div>
             <h1>Rewardwale version 2.0</h1>
-            {/* <ThemeToggle/> */}
             <ThemeColorToggle />
             <ThemeModeToggle />
           </div>

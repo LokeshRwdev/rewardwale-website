@@ -1,36 +1,35 @@
-// 'use client'
-// import { useEffect } from 'react';
-// import { applyInitialTheme } from '../utils/theme';
-// import './globals.css';
-// export default function RootLayout({
-//   children,
-// }: {
-//   children: React.ReactNode;
-// }) {
-//   useEffect(() => {
-//     applyInitialTheme();
-//   }, []);
-
-//   return (
-//     <html lang="en">
-//       <body>{children}</body>
-//     </html>
-//   );
-// }
-//
-// Lokesh layout file use client ?
-//
-
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Noto_Sans, Roboto, Open_Sans, Merriweather_Sans } from '@next/font/google';
 import "./globals.css";
 import { ThemeProvider as NextThemesProvider, useTheme } from "next-themes";
 import ThemeDataProvider from "@/context/theme-data-provider";
 
-const inter = Inter({ subsets: ["latin"] });
+const notoSans = Noto_Sans({
+  weight: ['400', '700'], 
+  subsets: ['latin'],
+  display: 'swap',
+});
+
+const roboto = Roboto({
+  weight: ['400', '500', '700'],
+  subsets: ['latin'],
+  display: 'swap',
+});
+
+const openSans = Open_Sans({
+  weight: ['400', '600', '700'],
+  subsets: ['latin'],
+  display: 'swap',
+});
+
+const merriweatherSans = Merriweather_Sans({
+  weight: ['400', '700'],
+  subsets: ['latin'],
+  display: 'swap',
+});
 
 export const metadata: Metadata = {
-  title: "RewardWale",
+  title: "Rewardwale",
   description: "Sharing experiences gets Rewarding",
 };
 
@@ -41,7 +40,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={inter.className}>
+      <body className={`${notoSans.className} ${roboto.className} ${openSans.className} ${merriweatherSans.className}`}>
         <NextThemesProvider
           attribute="class"
           defaultTheme="dark"

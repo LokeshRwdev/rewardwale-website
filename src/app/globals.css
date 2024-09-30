@@ -30,6 +30,7 @@ body {
   }
 }
 
+
 @layer base {
   :root {
     --border: 0 0% 89.8%; /* You can still use CSS variables for colors */
@@ -49,4 +50,3 @@ html, body {
   @apply bg-gray-900 text-white;
 }
 
-/* Remove this section since it applies styles that are already set */
