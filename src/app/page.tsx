@@ -1,24 +1,29 @@
-import { ThemeColorToggle } from "@/components/theme-color-toggle";
-import { ThemeModeToggle } from "@/components/theme-mode-toggle";
+import ContactSection from "@/sections/home/contact-section";
 import HeroSection from "@/sections/home/hero-section";
-import Image from "next/image";
+import HowtoSection from "@/sections/home/howto-section";
+import MediaSection from "@/sections/home/media-section";
+import RewardSection from "@/sections/home/reward-section";
+import TestimonalsSection from "@/sections/home/testimonals-section";
+import WhatToSection from "@/sections/home/whatto-section";
+
+
 
 export default function Home() {
   return (
-    <div
-      className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen
-        p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]"
-    >
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
+    <div className="!scroll-smooth">
+      <main>
         <ol
           className="list-inside list-decimal text-sm text-center sm:text-left
             font-[family-name:var(--font-geist-mono)]"
         >
           <div>
-            <h1>Rewardwale version 2.0</h1>
             <HeroSection/>
-            <ThemeColorToggle />
-            <ThemeModeToggle />
+            <HowtoSection/>
+            <WhatToSection/>
+            <RewardSection/>
+            <MediaSection/>
+            <TestimonalsSection/>
+            <ContactSection/>
           </div>
         </ol>
       </main>
