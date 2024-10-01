@@ -1,11 +1,21 @@
-// tailwind.config.js
 module.exports = {
-    darkMode: 'class', // Enable dark mode with a class
-    theme: {
-      extend: {
-        // You can extend the theme here if needed
+  darkMode: 'class', 
+  theme: {
+    extend: {
+      screens: {
+        '3xl': '1920px',  
+      },
+      container: {
+        center: true,  
+        padding: {
+          DEFAULT: '1rem', 
+          sm: '2rem',
+          lg: '4rem',
+          xl: '5rem',
+          '2xl': '6rem',
+        },
       },
     },
-    plugins: [],
-  };
-  
+  },
+  plugins: [],
+}

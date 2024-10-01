@@ -1,5 +1,6 @@
 import { ThemeColorToggle } from "@/components/theme-color-toggle";
 import { ThemeModeToggle } from "@/components/theme-mode-toggle";
+import HeroSection from "@/sections/home/hero-section";
 import Image from "next/image";
 
 export default function Home() {
@@ -15,6 +16,7 @@ export default function Home() {
         >
           <div>
             <h1>Rewardwale version 2.0</h1>
+            <HeroSection/>
             <ThemeColorToggle />
             <ThemeModeToggle />
           </div>
