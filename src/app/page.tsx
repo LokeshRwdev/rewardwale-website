@@ -16,6 +16,7 @@ export default function Home() {
           className="list-inside list-decimal text-sm text-center sm:text-left
             font-[family-name:var(--font-geist-mono)]"
         >
+
           <div>
             <HeroSection/>
             <HowtoSection/>
@@ -25,6 +26,8 @@ export default function Home() {
             <TestimonalsSection/>
             <ContactSection/>
           </div>
+
+
         </ol>
       </main>
     </div>
