@@ -2,7 +2,7 @@ import React from 'react'
 
 const MediaSection = () => {
   return (
-    <div  style={{ minHeight: '100vh', backgroundColor:"gold" }} className='h-screen flex flex-col items-center justify-center font-semibold text-2xl'>
+    <div  style={{ minHeight: '100vh', fontSize:'40px',  backgroundColor:"gold" }} className='h-screen flex flex-col items-center justify-center font-semibold text-2xl'>
        In Media
     </div>
   )
