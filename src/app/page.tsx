@@ -14,12 +14,9 @@ export default function Home() {
           className="list-inside list-decimal text-sm text-center sm:text-left
             font-[family-name:var(--font-geist-mono)]"
         >
-          <div>
-            <h1>Rewardwale version 2.0</h1>
-            <HeroSection/>
-            <ThemeColorToggle />
-            <ThemeModeToggle />
-          </div>
+        
+          <HeroSection/>
+
         </ol>
       </main>
     </div>
