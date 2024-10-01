@@ -50,7 +50,7 @@ const api = axios.create({
     latitude: latitude,
     longitude: longitude,
     lan: "en",
-    Authorization: "Bearer " + getLocalStorageValue(keys.accessToken, ""),
+    // Authorization: "Bearer " + getLocalStorageValue(keys.accessToken, ""),
   },
 });
 
