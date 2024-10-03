@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Header, Footer } from '@/components/layout';
 import {
   Noto_Sans,
   Roboto,
@@ -48,6 +49,7 @@ export default function RootLayout({
       <body
         className={`${notoSans.className} ${roboto.className} ${openSans.className} ${merriweatherSans.className}`}
       >
+         <Header />
         <NextThemesProvider
           attribute="class"
           defaultTheme="dark"
@@ -58,6 +60,7 @@ export default function RootLayout({
             <div className="container mx-auto max-w-3xl">{children}</div>
           </ThemeDataProvider>
         </NextThemesProvider>
+        <Footer />
       </body>
     </html>
   );
