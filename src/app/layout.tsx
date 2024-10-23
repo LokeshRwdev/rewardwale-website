@@ -58,7 +58,7 @@ export default function RootLayout({
       </head>
       {<GoogleTagManager gtmId="GTM-PTD4M7JZ" />}
       <body
-        className={`${notoSans.className} ${roboto.className} ${openSans.className} ${merriweatherSans.className}`}
+        className={`${notoSans.className} ${roboto.className} ${openSans.className} ${merriweatherSans.className}` }
       >
         <Header />
         <NextThemesProvider
@@ -68,7 +68,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <ThemeDataProvider>
-            <div className="container mx-auto max-w-3xl">{children}</div>
+            <div className="container mx-auto max-w-7xl">{children}</div>
           </ThemeDataProvider>
         </NextThemesProvider>
         <Footer />

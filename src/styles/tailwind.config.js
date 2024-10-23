@@ -3,7 +3,7 @@ module.exports = {
   theme: {
     extend: {
       screens: {
-        '3xl': '1920px',  
+        'xl': '1980px',  
       },
       container: {
         center: true,  
